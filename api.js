@@ -32,7 +32,8 @@ fetch(url)
         list.append(div)
     }
 
-    loading.classList.remove('active')        
+    loading.classList.remove('active') 
+    alert("If category not interesting you can change it by refreshing the page")       
 })
 .catch(error => {
     console.error(error);
