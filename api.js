@@ -32,10 +32,11 @@ fetch(url)
         list.append(div)
     }
 
-    loading.classList.remove('active') 
-    alert("If category not interesting you can change it by refreshing the page")       
+    loading.classList.remove('active')        
+}).then(() => {
+    alert("If category not interesting you can change it by refreshing the page 😀👌")
 })
 .catch(error => {
     console.error(error);
-    alert('REFRESH THE PAGE PLEASE !!! error found')
+    location.reload()
 })
