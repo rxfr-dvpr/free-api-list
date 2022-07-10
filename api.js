@@ -36,4 +36,5 @@ fetch(url)
 })
 .catch(error => {
     console.error(error);
+    alert('REFRESH THE PAGE PLEASE !!! error found')
 })
