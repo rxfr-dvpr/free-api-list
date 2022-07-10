@@ -16,9 +16,9 @@ fetch(url)
     let info = data.entries;
     let ranNum = random(data.count);
     let pageRan = random(data.count);
-    let dataErrorFix = (pageRan < 10 ? pageRan = 25 : pageRan) < ranNum ? ranNum : data.count;
+    pageRan > ranNum ? pageRan = Math.floor(ranNum / 2) : pageRan;
 
-    for (let i = pageRan; i < dataErrorFix; i++) {
+    for (let i = pageRan; i < ranNum; i++) {
         let datas = info[i];
 
         let div = document.createElement('div')
